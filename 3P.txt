@@ -1,0 +1,6 @@
+3.1P
+From my experience with other programming languages, this just seems like a difference in terminology, as I made us of similar functions in other programming languages but they weren't called methods.
+So the only new thing for me was adapting to the new terminology and how to isolate the Javascript from the html, since the examples we were given were in html files, which is not what we were tasked with creating.
+
+3.2P
+Having worked with arrays in other programming langauges previouslly this isn't anything new to me conceptually. It is just adjusting my existing knowledge to fit this new programming language.
