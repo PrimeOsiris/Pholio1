@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab 7 Workshop</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <style>
+        .componentalpha{
+            display: block;
+            background-color: aqua;
+            height: 150px;
+            text-align: center;
+            padding-top: 4em;
+        }
+    </style>
+</head>
+<body>
+<div id="app">
+    {{message}}
+    <div class="componentalpha"> 
+        <component-alpha></component-alpha>
+    </div>
+</div>
+<script>
+
+    Vue.component('component-alpha',{
+        data() {
+            return {
+                componentmessage: "Hello from Alpha"
+            }
+        },
+        template: '<h1>{{componentmessage}}</h1>'
+    })
+
+    new Vue({el:"#app",
+    data(){
+        return{
+            message: "Hello World"
+        }
+    }})
+</script>
+</body>
+</html>

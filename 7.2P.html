@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lab 7 Workshop</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <style>
+        .componentalpha{
+            display: block;
+            background-color: aqua;
+            height: 150px;
+            text-align: center;
+            padding-top: 4em;
+        }
+    </style>
+
+    <style>
+    .componentbeta{
+        display: block;
+        background-color: rgb(255, 196, 0);
+        height: 150px;
+        text-align: center;
+        padding-top: 4em;
+    }
+    </style>
+
+    <style>
+    .componentcharlie{
+    display: block;
+    background-color: rgb(0, 255, 106);
+    height: 150px;
+    text-align: center;
+    padding-top: 4em;
+    }
+    </style>
+</head>
+<body>
+<div id="app">
+    {{message}}
+    <div class="componentalpha"> 
+        <component-alpha></component-alpha>
+    </div>
+
+    <div class="componentbeta">
+        <componentbeta></componentbeta>
+    </div>
+
+    <div class="componentcharlie">
+        <componentCharlie inline-template>
+            <div>
+                {{message}}
+            </div>
+        </componentCharlie>
+    </div>
+</div>
+<script>
+
+    Vue.component('componentCharlie',{
+        data() {
+            return {
+                componentmessage: "Hello from CharlIe"
+            }
+        },
+    })
+
+    let componentBeta = {
+        data() {
+            return {
+                componentmessage: "Hello from Beta"
+            }
+        },
+        template: '<h1>{{betamessage}}</h1>'
+    }
+    
+
+    Vue.component('component-alpha',{
+        data() {
+            return {
+                componentmessage: "Hello from Alpha"
+            }
+        },
+        template: '<h1>{{componentmessage}}</h1>'
+    })
+
+    new Vue({el:"#app",
+    data(){
+        return{
+            message: "Hello World"
+        }
+    },
+        components: {
+            'componentbeta' : componentBeta
+        }
+    })
+</script>
+</body>
+</html>
