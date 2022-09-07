@@ -1,0 +1,2 @@
+The way that Vue works was new to me and is interesting to learn about. Being able to change the code of a webpage without having to actually access the source code is useful.
+But I feel that the task we were given to express this is a bit basic, but that might just be my previous experience with coding talking.
