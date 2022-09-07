@@ -1,2 +1,0 @@
-Responsive Web design is design elements or features built into a web page that respond to certain pieces of data such as the size of the screen the page is being displayed on.
-It is important because it makes the page more accessible to users which can increase profits/click through rate for the page/company.
