@@ -1,0 +1,55 @@
+<form
+  id="app"
+  @submit="checkForm"
+  action="https://vuejs.org/"
+  method="post"
+  novalidate="true"
+>
+
+  <p v-if="errors.length">
+    <b>Please fill in the blank field(s):</b>
+    <ul>
+      <li v-for="error in errors">{{ error }}</li>
+    </ul>
+  </p>
+
+  <p>
+    <label for="name">Name</label>
+    <input
+      id="name"
+      v-model="name"
+      type="text"
+      name="name"
+    >
+  </p>
+
+  <p>
+    <label for="email">Email</label>
+    <input
+      id="email"
+      v-model="email"
+      type="email"
+      name="email"
+    >
+  </p>
+
+  <p>
+    <label for="movie">Favorite Movie</label>
+    <input type="checkbox" id="Dragon Ball" value="Dragon Ball" v-model="FavouriteMovie">
+        <label for="Dragon Ball">Dragon Ball</label>
+        <input type="checkbox" id="Avengers" value="Avengers" v-model="FavouriteMovie">
+        <label for="Avengers">Avengers</label>
+        <input type="checkbox" id="Star Wars" value="Star Wars" v-model="FavouriteMovie">
+        <label for="Star Wars">Star Wars</label>
+        <br>
+        <span>Favourite Movie(s): {{ FavouriteMovie }}</span>
+  </p>
+
+  <p>
+    <input
+      type="submit"
+      value="Submit"
+    >
+  </p>
+
+</form>

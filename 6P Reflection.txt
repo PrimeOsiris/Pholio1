@@ -1,0 +1,6 @@
+6.1P
+I have created similar programs in other programming langauges to both of these tasks, however, in my experience they were easier and didn't require multiple files for for it to work.
+Also, when I first learned how to create this kind of program, it was using a programming interface that allowed us to both see the code and import default elements like input boxes, meaning that it was much easier.
+
+6.2P
+Much like above, this was just adapting my knowledge to a new programming language and new formats that are needed for the code to run. 
